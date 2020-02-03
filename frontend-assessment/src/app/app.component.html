@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-content>
+    <input
+      #nameFilterInput
+      id="name-input"
+      matInput
+      placeholder="Filter by work name..."
+      type="text"
+    >
+    <div class="sort-toggle">
+      Earliest first
+      <mat-slide-toggle (change)="sortWorkOrders($event.checked)"></mat-slide-toggle>
+      Latest first
+    </div>
+    <div class="work-order-list">
+      <p *ngIf="!workOrderArray.length">There are no work orders.</p>
+      <app-work-order
+        (workerFetcher)="fetchWorker($event)"
+        *ngFor="let order of workOrderArray;"
+        [workOrder]="order"
+        [workers]="workers"
+      ></app-work-order>
+    </div>
+  </mat-card-content>
+</mat-card>

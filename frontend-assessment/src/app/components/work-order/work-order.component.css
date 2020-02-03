@@ -1,0 +1,24 @@
+.work-order-card {
+    background-color: silver;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    grid-area: workorder;
+    margin: 20px;
+    padding: 20px;
+}
+
+.work-order-card-name {
+    text-align: center;
+}
+
+.work-order-deadline {
+    text-align: right;
+}
+
+@media only screen and (max-width: 800px) {
+    .work-order-card {
+        margin: 5px;
+        padding: 5px;
+    }
+}

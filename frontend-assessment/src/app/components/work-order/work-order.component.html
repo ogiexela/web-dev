@@ -1,0 +1,6 @@
+<div class="work-order-card">
+    <h1 class="work-order-card-name">{{workOrder?.name}}</h1>
+    <label>{{workOrder?.description}}</label>
+    <app-worker [worker]="worker"></app-worker>
+    <label class="work-order-deadline">{{workOrder.deadline*1000 | date:'MM/dd/yyyy, h:mm:ss a'}}</label>
+</div>

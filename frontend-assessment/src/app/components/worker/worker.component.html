@@ -1,0 +1,11 @@
+<div
+    class="worker-card"
+    *ngIf="worker"
+>
+    <img [src]="worker?.image">
+    <div class="worker-card-info">
+        <label>{{worker?.name}}</label>
+        <label>{{worker?.companyName}}</label>
+    <label><a href="mailto:{{worker?.email}}">{{worker?.email}}</a></label>
+    </div>
+</div>

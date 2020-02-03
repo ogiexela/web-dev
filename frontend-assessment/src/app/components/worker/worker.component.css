@@ -1,0 +1,42 @@
+img {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.worker-card {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.worker-card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    img {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .worker-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    label {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+}

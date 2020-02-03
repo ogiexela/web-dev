@@ -1,0 +1,19 @@
+{
+  "name": "backend-assessment",
+  "version": "1.0.0",
+  "description": "hatchways backend assessment",
+  "author": "alexei golyashov",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest --verbose"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "4.17.1",
+    "axios": "0.19.1"
+  },
+  "devDependencies": {
+    "jest": "24.9.0"
+  }
+}
